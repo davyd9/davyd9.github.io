@@ -1,0 +1,24 @@
+
+# === Security & Secrets Hardening ===
+.env
+.env.*
+!.env.example
+google-services.json
+!google-services.json.example
+keystore.properties
+!keystore.properties.example
+*.jks
+*.keystore
+local.properties
+*secret*
+*credentials*.json
+*.pem
+*.key
+
+# === Build & Cache Directories ===
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.gradle/
+build/

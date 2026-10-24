@@ -1,0 +1,118 @@
+/* ============================================================
+   TABLETS E TELAS MÉDIAS (max-width: 992px)
+   ============================================================ */
+@media (max-width: 992px) {
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-xl);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ============================================================
+   CELULARES (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --sp-4xl: 3.5rem;
+    --sp-3xl: 2.5rem;
+    --sp-2xl: 1.75rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: calc(var(--navbar-h) + var(--sp-xl)) 0 var(--sp-2xl);
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--sp-xl);
+  }
+
+  .hero-desc {
+    margin: 0 auto var(--sp-xl);
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-photo-wrap {
+    order: -1;
+  }
+
+  .hero-photo {
+    width: 240px;
+    height: 240px;
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-xl);
+  }
+
+  .sobre-foto-wrap {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-tagline {
+    margin: 0 auto var(--sp-md);
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--sp-md);
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   TELAS PEQUENAS (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .destaque-grid,
+  .cards-grid,
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+}
